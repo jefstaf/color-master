@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+To play the game, go to https://jefstaf.github.io/color-master/.
 
-You can use the [editor on GitHub](https://github.com/jefstaf/color-master/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+I have tested the game in Firefox and Chrome. I have not tested it using IE/Edge/anything else. I have really only tested it on a laptop, but it should also work on a tablet. There are touchscreen controls which in theory work but I don't know how convenient they are.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I hope the game is a good size on your screen; it is just a fixed size. (I have not tried to make it scale to the size of your screen/window. Maybe in some future update.) For now, if it's too big or small, just zoom in/out on your browser (probably Ctrl+plus or Ctrl+minus). Another browser tip: F11 toggles full-screen mode.
 
-### Markdown
+Your progress is not saved automatically, so don't forget to save your game if you are going to quit and come back to it later. (This is not Ctrl+S saving the webpage; use the in-game Save button.) Saving is done with not-exactly-cookies-but-something-like-cookies: the data is saved in your browser. That means you can close your browser, restart your computer, etc., and your saved game will still be there. BUT if you switch to a different browser or different computer, or clear your cache/history, etc., your saved game will not be there. Also, if you have some kind of privacy/blocking software, I don't know if that might affect it or not, so you might want to test saving after Level 1 or something to make sure it works.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As an alternative to saving games and loading saved games, you can use the Jump to Level feature. You will need to know the level number and level title of the level you want to go to, so if you plan on using this feature, write down that info or something for the level you were on (note: the LEVEL, not the World) before you quit.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jefstaf/color-master/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Please let me know if there are any bugs or anything else I should change.
