@@ -1,0 +1,246 @@
+html {
+    min-height: 100%; /* to extend the gradient after window resize*/
+    background-image: linear-gradient(to bottom right, rgba(255,0,0,.3), rgba(255,128,0,.3), rgba(255,255,0,.3), rgba(0,128,0,.3), rgba(0,0,255,.3), rgba(128,0,0,.3));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-y: scroll; /* to always show vertical scrollbar, so width doesn't change */
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline;
+    height: 24px;
+    margin: 0 0 10px 0;
+    vertical-align: bottom;
+    border: 3px ridge white;
+    box-shadow: -4px 8px 12px 0 black;
+    border-radius: 60%;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border-color: darkgray;
+    border-style: groove;
+}
+
+#arena, #instructions, #controls {
+    display: block;
+    margin: auto;
+    width: 700px;
+    
+    border: 2px dotted black;
+    background: rgba(200,200,200,0.4);
+}
+
+#arena, #canvasAlt {
+    height: 380px;
+    text-align: center;
+}
+
+#arena {
+    border-bottom: 1px dashed gray;
+    background-image: linear-gradient(to bottom right, rgba(255,0,0,.3), rgba(255,128,0,.3), rgba(255,255,0,.3), rgba(0,128,0,.3), rgba(0,0,255,.3), rgba(128,0,0,.3));
+}
+
+
+#metaButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    margin: 20px 150px 0px 150px; /* top right bottom left */
+}
+
+#metaButtons button {
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#creditsButton {
+    width: 100px;
+    background-color: rgb(192,238,255);
+    color: rgb(0,94,128); 
+}
+
+#creditsButton:hover {
+    background-color: rgb(0,94,128);
+    color: rgb(192,238,255); 
+}
+
+#deleteGameButton {
+    background-color: rgb(200,50,50);
+}
+
+#deleteGameButton:hover {
+    background-color: rgb(255,192,192);
+}
+
+#gameTitle {
+    margin-top: 50px;
+    font-size: 64px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin: 0 0 0 10px;
+    padding: 5px 0 0 0;
+    font-size: 24px;
+}
+
+#canvas {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    
+    border: 4px solid black;
+    /*background: #444;*/
+}
+
+
+#topBar {
+    text-align: center;
+}
+
+#controls {
+    /* width is 700 px */
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-gap: 40px;
+    text-align: left;
+    border-top: 0;
+    border-bottom: 1px dashed gray;
+}
+
+#upArrow {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+
+#restartButton, #exitLevelButton, #exitGameButton, #saveButton {
+    display: inline-block;
+}
+
+#restartButton {
+    margin-left: 5px;
+    background-color: darkred;
+}
+
+#restartButton:hover {
+    background-color: white;
+    color: darkred;
+    border-color: darkred;
+    border-style: groove;
+}
+
+#exitLevelButton {
+    margin-left: 5px;
+    background-color: darkcyan;
+}
+
+#exitLevelButton:hover {
+    background-color: white;
+    color: darkcyan;
+    border-color: darkcyan;
+    border-style: groove;
+}
+
+#saveButton {
+    margin-left: 5px;
+    background-color: indigo;
+}
+
+#saveButton:hover {
+    background-color: white;
+    color: indigo;
+    border-color: indigo;
+    border-style: groove;
+}
+
+#exitGameButton {
+    margin-left: 5px;
+    background-color: black;
+}
+
+#exitGameButton:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-style: groove;
+}
+
+.restartColor {
+    color: darkred;
+    font-weight: bold;
+}
+
+.saveColor {
+    color: indigo;
+    font-weight: bold;
+}
+
+.quitColor {
+    color: black;
+    font-weight: bold;
+}
+
+.worldColor {
+    color: darkcyan;
+    font-weight: bold;
+}
+
+#levelText {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#levelTitle {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#colorGraf {
+    margin-top: 10px;
+}
+
+
+
+#instructions {
+    min-height: 50px;
+    border-top: 0;
+}
+
+#ic {        /* hide instructions until user clicks button */
+    display: none;
+}
+
+
+
+div.scrollmenu {
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    background-color: rgba(85,85,85,.8);
+    overflow: auto;
+    white-space: nowrap;
+}
+  
+div.scrollmenu button {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+div.scrollmenu button:hover {
+    background-color: #777;
+}
+
+

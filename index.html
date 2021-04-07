@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="files/game-style.css">
+</head>
+
+<body onload="introScreen()">
+
+
+<div id="topBar">
+
+
+    <span id="dev">
+        <button id="gridButton" type="button" onclick="game.toggleGrid()">Grid</button>
+        <button id="hitPointsButton" type="button" onclick="game.toggleHP()">HP</button>
+        <button id="checkLevelDesignButton" type="button" onclick="game.checkLevelDesignButtonPressed()">Check Level Design</button>
+    </span>
+    <span id="lev">
+        <button id="levDecButton" type="button" onclick="game.levelDecButtonPressed()">Level -</button>
+        <button id="creditsButton" type="button" onclick="creditsButtonPressed()">Credits</button>
+        <button id="levIncButton" type="button" onclick="game.levelIncButtonPressed()">Level +</button>
+    </span>
+    
+
+</div>
+
+<div id="arena">
+
+<div id="canvasAlt">
+    <div id="gameTitle">ColorMaster</div>
+    <div id="metaButtons">
+        <button id="startGameButton" type="button" onclick="startGame([])">Start a New Game</button>
+        <button id="loadGameButton" type="button" onclick="loadGameButtonPressed()">Load a Saved Game</button>
+        <button id="jumpToLevelButton" type="button" onclick="goToLevelButtonPressed()">Jump to a Level</button>
+        <button id="deleteGameButton" type="button" onclick="deleteSavedGameButtonPressed()">Delete a Saved Game</button>
+    </div>
+    <div id="savedGames" class="scrollmenu"></div>
+</div>
+
+<canvas id="canvas">Please update your browser (or try a different browser) in order to play this game. Your current browser does not support HTML5 Canvas.</canvas>
+
+
+</div>
+
+<div id="controls">
+    <div id="controlsLeftSide">
+        <img class="arrow" id="leftArrow" src="files/images/triangle-left200.png" height="100" />
+        <img class="arrow" id="upArrow" src="files/images/triangle-up200.png" width="100" />
+    </div>
+    <div id="controlsCenter">
+        <span id="levelText"><span id="levelNum"></span>:</span>
+        <button id="restartButton" type="button" onkeyup="event.preventDefault()" onclick="game.restartButtonPressed()">Restart</button>
+        <button id="exitLevelButton" type="button" onkeyup="event.preventDefault()" onclick="game.exitLevelButtonPressed()">To World</button>
+        <button id="saveButton" type="button" onkeyup="event.preventDefault()" onclick="game.saveGame()">Save</button>
+        <button id="exitGameButton" type="button" onkeyup="event.preventDefault()" onclick="exitGameButtonPressed()">Quit</button>
+        <br />
+        <span id="levelTitle"></span>
+        <div id="colorGraf">Your current color: <span id="currentColorSpan"></span></div>
+    </div>
+    <div id="controlsRightSide">
+        <img class="arrow" id="downArrow" src="files/images/triangle-down200.png" width="100" />
+        <img class="arrow" id="rightArrow" src="files/images/triangle-right200.png" height="100" />
+    </div>
+</div>
+
+
+
+<div id="instructions">
+    <h2>Instructions <button id="showInstructionsButton" onclick="game.toggleInstructions()">Show</button></h2>
+    <div id="ic">
+    <ul>
+        <li>Move pawn with the black arrows above (on touchscreen) or arrow keys (on keyboard).</li>
+        <li>You can only go through doors when your pawn is the color of the door.</li>
+        <li><b><u>In world:</u></b> Move to a level number to start. Use the buttons to <a class="saveColor" onclick="game.saveGame()">Save</a> your game or <a class="quitColor" onclick="game.exitGameButtonPressed()">Quit</a>. If you get stuck, Save and Quit and load your saved game... or just enter and exit any level.</li>
+        <li><b><u>In level:</b></u> Get to the goal rainbow after collecting all coins. If you get stuck & want to start the level over, click/tap <a class="restartColor" onclick="game.restartButtonPressed()">Restart</a> or press <span class="restartColor">R</span>. Use the <a class="worldColor" onclick="game.exitLevelButtonPressed()">To World</a> button to exit the level.</li>
+        <li><b><u>Your color:</b></u>
+            <ol>
+                <li>You begin in a neutral/colorless state.</li>
+                <li>You will take on the color of the first colored ring you touch.</li>
+                <li>After that, when you touch rings, your color will change by <b>50-50 blending</b>.</li>
+                <li>(Hint: that means that the order in which you touch rings can be significant.)</li>
+            </ol>
+        <li>Some levels have subtle color variations; high screen brightness is recommended.</li>
+        <li>If you want to use Jump to Level, you must know the level (not world) number and title.</li>
+    </ul>
+    </div>
+</div>
+
+<script src="files/colors.js"></script>
+<script src="files/levels.js"></script>
+<script src="files/game-script.js"></script>
+
+
+</body>
+</html>
